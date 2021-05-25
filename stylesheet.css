@@ -47,15 +47,15 @@ h2 {
     margin: 15px;
     position: relative;
     text-align: center;
-    width: auto;
-    height: 300px;}
+    width: 300px;
+    height: auto;}
 
 #pic-2{
     float: inherit;
     border: solid#00008b;
     margin: 15px;}
 
-p {position: center;}
+p {position: relative;}
 
 text{text-align: center;}
 
