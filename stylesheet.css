@@ -4,8 +4,8 @@ html {
 }
 
 body {
-    margin: 10px;
-    padding: 10px;
+    margin: 30px;
+    padding: 30px;
 }
 
 header {
@@ -21,43 +21,54 @@ nav {
     background-color: #6fc3e4;
 }
 
-.timer{
-    float: right;
-    width: 300px;
-    height: auto;
+.intro {
+    text-align: center;
 }
 
 h1 {
     font-size: 2.5rem;
-    line-height: 2.5rem;;
-    color: #b0c4de
+    line-height: 2.5rem;
+    color: #b0c4de;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-inline-start: 50%;
 }
 
 
 h2 {
     line-height: 2.5rem;
     font-size: 3rem;
-     color: #00f; 
+    text-align: center;
+    color: #00f; 
     shape-image-threshold: initial;
+    font-family: 'Petit Formal Script', cursive;
 }
 
-#pic-1 {
-    float:right;
+h3{
+    font-family: 'Petit Formal Script', cursive
+}
+
+.pic-1 {
+    float:left;
     border: solid #00008b;
     margin: 15px;
-    position: relative;
-    text-align: center;
-    width: 300px;
-    height: auto;}
+
+}
+
 
 #pic-2{
     float: inherit;
     border: solid#00008b;
-    margin: 15px;}
+    margin: 5px;}
 
-p {position: relative;}
 
-text{text-align: center;}
+.grid-table{
+    display: grid;
+    grid-template-rows: auto auto; 
+    grid-template-columns: auto auto auto; 
+    border: solid #000;
+}
 
 form {
     margin: 50px auto;
