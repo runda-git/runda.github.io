@@ -20,9 +20,15 @@ nav {
     padding: 10px;
     background-color: #6fc3e4;
 }
+#github {
+    position: left;
+}
 
 .intro {
     text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 h1 {
@@ -46,28 +52,34 @@ h2 {
 }
 
 h3{
-    font-family: 'Petit Formal Script', cursive
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
 }
 
 .pic-1 {
-    float:left;
+    float:right;
     border: solid #00008b;
     margin: 15px;
-
+    height: 300px;
+    width: auto;
 }
 
 
 #pic-2{
     float: inherit;
     border: solid#00008b;
-    margin: 5px;}
-
+    margin: 5px;
+    position: relative;
+}
 
 .grid-table{
     display: grid;
     grid-template-rows: auto auto; 
     grid-template-columns: auto auto auto; 
-    border: solid #000;
+}
+.grid-table h3{
+    grid-column: 1 / -1;
+
 }
 
 form {
