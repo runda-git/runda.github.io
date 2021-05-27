@@ -4,8 +4,11 @@ html {
 }
 
 body {
-    margin: 30px;
-    padding: 30px;
+    padding: 10px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -21,7 +24,7 @@ nav {
     background-color: #6fc3e4;
 }
 #github {
-    position: left;
+    float: left;
 }
 
 .intro {
@@ -36,21 +39,31 @@ h1 {
     line-height: 2.5rem;
     color: royalblue;
     margin: auto;
-    width: 50%;
+    text-align: center;
+    text-decoration: none
 }
 
 
 h2 {
-    line-height: 2.5rem;
-    font-size: 3rem;
-    text-align: center;
-    color: #00f; 
-    font-family: 'Petit Formal Script', cursive;
+    color: royalblue;
+    width: 50%;
 }
 
 h3{
-    font-family: 'Shadows Into Light', cursive;
     text-align: center;
+}
+
+.profile-pic {
+    border-radius: 70%;
+    width: 55%;
+    height: auto;
+    float: right;
+    box-shadow: 0 4px 6px 0 #FFF;
+    transition: all ease-in-out .2s;
+}
+    
+.profile-pic:hover {
+    box-shadow: 0 8px 12px 0 #FFF;
 }
 
 .pic-1 {
@@ -58,20 +71,30 @@ h3{
     border-radius: 70%;
     width: 250px;
     height: 250px;
-    box-shadow: 0 4px 6px 0 #00008b
+    box-shadow: 0 4px 6px 0 #FFF
 }
 
+.pic-1:hover {
+    box-shadow: 0 8px 12px 0 #FFF;
+}
 
-#pic-2{
+.pic-2 {
     float: inherit;
-    border: solid#00008b;
-    margin: 5px;
-    position: relative;
+    border: solid #ffff; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .about-grid {
     display: grid;
-    grid-template-columns: 50% 50%
+    grid-template-columns: 50% 50%;
+}
+
+.code{
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .title {
@@ -84,21 +107,14 @@ h3{
     grid-template-rows: auto auto; 
     grid-template-columns: auto auto auto; 
 }
+
 .grid-table h3{
     grid-column: 1 / -1;
-
 }
 
-.profile-pic {
-border-radius: 70%;
-width: 250px;
-height: 250px;
-box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
-transition: all ease-in-out .2s;
-}
-
-.profile-pic:hover {
-box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+.project-images{
+    justify-self: center;
+    padding: 4%;
 }
 
 form {
@@ -146,4 +162,22 @@ form {
 
 .form-item button {
     width: 100px;
+}
+
+@media (min-width:500px){
+    .grid {
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+@media (min-width:900px){
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width:1200px){
+
 }
