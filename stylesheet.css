@@ -18,10 +18,10 @@ header {
 }
 
 nav {
-    border: solid#00008b; 
+    border: solid #000; 
     margin: 10px;
     padding: 10px;
-    background-color: #6fc3e4;
+    background-color: #d3d3d3;
 }
 #github {
     float: left;
@@ -34,10 +34,51 @@ nav {
     grid-template-columns: 50% 50%;
 }
 
+.circle-sketch-highlight{
+    position:relative;
+  }
+
+  .circle-sketch-highlight:before{
+    content:"Anika";
+    z-index:-1;
+    left:-0.5em;
+    top:-0.1em;
+    border-width:2px;
+    border-style:solid;
+    border-color: #ff0;
+    position:absolute;
+    border-right-color:transparent;
+    width:100%;
+    height:1em;
+    transform:rotate(2deg);
+    opacity:0.7;
+    border-radius:50%;
+    padding:0.1em 0.25em;
+  }
+  
+  .circle-sketch-highlight:after{
+    content:"Anika";
+    z-index:-1;
+    left:-0.5em;
+    top:0.1em;
+    padding:0.1em 0.25em;
+    border-width:2px;
+    border-style:solid;
+    border-color:#ff0;
+    border-left-color:transparent;
+    border-top-color:transparent;
+    position:absolute;
+    width:100%;
+    height:1em;
+    transform:rotate(-1deg);
+    opacity:0.7;
+    border-radius:50%;
+}
+
 h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    color: royalblue;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: #000;
     margin: auto;
     text-align: center;
     text-decoration: none
@@ -45,7 +86,7 @@ h1 {
 
 
 h2 {
-    color: royalblue;
+    color: #000;
     width: 50%;
 }
 
@@ -57,25 +98,30 @@ h3{
     border-radius: 70%;
     width: 55%;
     height: auto;
-    float: right;
-    box-shadow: 0 4px 6px 0 #FFF;
+    float: center;
+    box-shadow: 0 4px 6px 0 #000;
     transition: all ease-in-out .2s;
 }
     
 .profile-pic:hover {
-    box-shadow: 0 8px 12px 0 #FFF;
+    box-shadow: 0 8px 12px 0 #000;
+}
+
+.title {
+    text-align: center;
+    text-decoration: none 
 }
 
 .pic-1 {
     float: right;
     border-radius: 70%;
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 4px 6px 0 #FFF
+    width: 25%;
+    height: auto;
+    box-shadow: 0 4px 6px 0  #000;
 }
 
 .pic-1:hover {
-    box-shadow: 0 8px 12px 0 #FFF;
+    box-shadow: 0 8px 12px 0 #000;
 }
 
 .pic-2 {
@@ -95,11 +141,6 @@ h3{
 .code{
     margin-left: 35px;
     margin-right: 35px;
-}
-
-.title {
-    text-align: center;
-    text-decoration: none 
 }
 
 .grid-table{
@@ -137,26 +178,27 @@ form {
 .form-item input,
 .form-item textarea {
     flex-basis: 50%;
-    border: 2px solid d#00008b;
+    border: 2px solid #ff4500;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-    border: 2px solid  #6fc3e4;
+    border: 2px solid #ff4500;
+    background-color:#ffa500;
 }
 
 .form-item input,
 .form-item textarea,
 .form-item button {
-    border: 2px solid d#00008b;
-    background-color:#b0c4de;
+    border: 2px solid #ff4500;
+    background-color:#ffa500;
     padding: 5px;
     font-size: 18px;
 }
 
 .form-item button:hover {
-    border: 2px solid #6fc3e4;
-    background-color:  #6fc3e4;
+    border: 2px solid #ff4500;
+    background-color:#ffa500;
     color: #FFF;
 }
 
@@ -168,14 +210,12 @@ form {
     .grid {
         grid-template-columns: 50% 50%;
     }
-
 }
 
 @media (min-width:900px){
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
 }
 
 @media (min-width:1200px){
