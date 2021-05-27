@@ -34,8 +34,7 @@ nav {
 h1 {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    color: #b0c4de;
-    text-align: center;
+    color: royalblue;
     margin: auto;
     width: 50%;
     margin-inline-start: 50%;
@@ -57,11 +56,11 @@ h3{
 }
 
 .pic-1 {
-    float:right;
-    border: solid #00008b;
-    margin: 15px;
-    height: 300px;
-    width: auto;
+    float: right;
+    border-radius: 70%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
 }
 
 
@@ -72,6 +71,16 @@ h3{
     position: relative;
 }
 
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%
+}
+
+.title {
+    text-align: center;
+    text-decoration: none 
+}
+
 .grid-table{
     display: grid;
     grid-template-rows: auto auto; 
@@ -80,6 +89,18 @@ h3{
 .grid-table h3{
     grid-column: 1 / -1;
 
+}
+
+.profile-pic {
+border-radius: 70%;
+width: 250px;
+height: 250px;
+box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+transition: all ease-in-out .2s;
+}
+
+.profile-pic:hover {
+box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
 }
 
 form {
