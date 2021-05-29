@@ -4,8 +4,11 @@ html {
 }
 
 body {
-    margin: 10px;
     padding: 10px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -15,49 +18,148 @@ header {
 }
 
 nav {
-    border: solid#00008b; 
+    border: solid #000; 
     margin: 10px;
     padding: 10px;
-    background-color: #6fc3e4;
+    background-color: #d3d3d3;
+}
+#github {
+    float: left;
 }
 
-.timer{
-    float: right;
-    width: 300px;
-    height: auto;
+.intro {
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.circle-sketch-highlight{
+    position:relative;
+  }
+
+  .circle-sketch-highlight:before{
+    content:"Anika";
+    z-index:-1;
+    left:-0.5em;
+    top:-0.1em;
+    border-width:2px;
+    border-style:solid;
+    border-color: #ff0;
+    position:absolute;
+    border-right-color:transparent;
+    width:100%;
+    height:1em;
+    transform:rotate(2deg);
+    opacity:0.7;
+    border-radius:50%;
+    padding:0.1em 0.25em;
+  }
+  
+  .circle-sketch-highlight:after{
+    content:"Anika";
+    z-index:-1;
+    left:-0.5em;
+    top:0.1em;
+    padding:0.1em 0.25em;
+    border-width:2px;
+    border-style:solid;
+    border-color:#ff0;
+    border-left-color:transparent;
+    border-top-color:transparent;
+    position:absolute;
+    width:100%;
+    height:1em;
+    transform:rotate(-1deg);
+    opacity:0.7;
+    border-radius:50%;
 }
 
 h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;;
-    color: #b0c4de
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: #000;
+    margin: auto;
+    text-align: center;
+    text-decoration: none
 }
 
 
 h2 {
-    line-height: 2.5rem;
-    font-size: 3rem;
-     color: #00f; 
-    shape-image-threshold: initial;
+    color: #000;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
 }
 
-#pic-1 {
-    float:right;
-    border: solid #00008b;
-    margin: 15px;
-    position: relative;
+h3{
     text-align: center;
-    width: 300px;
-    height: auto;}
+}
 
-#pic-2{
+.profile-pic {
+    border-radius: 70%;
+    width: 55%;
+    height: auto;
+    float: center;
+    box-shadow: 0 4px 6px 0 #000;
+    transition: all ease-in-out .2s;
+}
+    
+.profile-pic:hover {
+    box-shadow: 0 8px 12px 0 #000;
+}
+
+.title {
+    text-align: center;
+    text-decoration: none 
+}
+
+.pic-1 {
+    float: right;
+    border-radius: 70%;
+    width: 25%;
+    height: auto;
+    box-shadow: 0 4px 6px 0  #000;
+}
+
+.pic-1:hover {
+    box-shadow: 0 8px 12px 0 #000;
+}
+
+.pic-2 {
     float: inherit;
-    border: solid#00008b;
-    margin: 15px;}
+    border: solid #ffff; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-p {position: relative;}
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
-text{text-align: center;}
+.code{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.grid-table{
+    display: grid;
+    grid-template-rows: auto auto; 
+    grid-template-columns: auto auto auto; 
+}
+
+.grid-table h3{
+    grid-column: 1 / -1;
+}
+
+.project-images{
+    justify-self: center;
+    padding: 4%;
+}
 
 form {
     margin: 50px auto;
@@ -79,29 +181,46 @@ form {
 .form-item input,
 .form-item textarea {
     flex-basis: 50%;
-    border: 2px solid d#00008b;
+    border: 2px solid #000;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-    border: 2px solid  #6fc3e4;
+    border: 2px solid #000;
+    background-color:#d3d3d3;
 }
 
 .form-item input,
 .form-item textarea,
 .form-item button {
-    border: 2px solid d#00008b;
-    background-color:#b0c4de;
+    border: 2px solid #000;
+    background-color:#d3d3d3;;
     padding: 5px;
     font-size: 18px;
 }
 
 .form-item button:hover {
-    border: 2px solid #6fc3e4;
-    background-color:  #6fc3e4;
+    border: 2px solid #000;
+    background-color:#d3d3d3;
     color: #FFF;
 }
 
 .form-item button {
     width: 100px;
+}
+
+@media (min-width:500px){
+    .grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (min-width:900px){
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1200px){
+
 }
