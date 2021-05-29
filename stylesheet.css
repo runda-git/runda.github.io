@@ -7,11 +7,14 @@ body {
     padding: 10px;
     background-color: #000;
     align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #FFF;
+    background: url("images/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover !important;
 }
+
 a{
     color: #FFF;
 }
@@ -30,6 +33,7 @@ nav {
 }
 #github {
     float: left;
+    width: 20px;
 }
 
 .intro {
