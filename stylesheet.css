@@ -13,7 +13,7 @@ body {
     color: #FFF;
 }
 a{
-    color: #eca1ea;
+    color: #FFF;
 }
 
 header {
@@ -23,11 +23,10 @@ header {
 }
 
 nav {
-    border: solid #000; 
+    border: solid #fff; 
     margin: 10px;
     padding: 10px;
-    background-color: #FFF;
-    color: #000;
+    background-color: #661663;
 }
 #github {
     float: left;
