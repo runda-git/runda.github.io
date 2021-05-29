@@ -150,6 +150,8 @@ h3{
 .project-images{
     justify-self: center;
     padding: 4%;
+    width: 50%;
+    height: auto;
 }
 
 form {
