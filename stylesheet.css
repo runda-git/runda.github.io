@@ -12,6 +12,9 @@ body {
     background-size: cover;
     color: #FFF;
 }
+a{
+    color: #eca1ea;
+}
 
 header {
     text-align: right;
@@ -23,7 +26,8 @@ nav {
     border: solid #000; 
     margin: 10px;
     padding: 10px;
-    background-color: #d3d3d3;
+    background-color: #FFF;
+    color: #000;
 }
 #github {
     float: left;
