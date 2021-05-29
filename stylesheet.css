@@ -117,7 +117,6 @@ h3{
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 4px 6px 0  #FFF;
     transition: all ease-in-out .2s;
 }
 
@@ -142,6 +141,8 @@ h3{
 .code{
     margin-left: 35px;
     margin-right: 35px;
+    font-size: large;
+
 }
 
 .grid-table{
@@ -196,7 +197,7 @@ form {
     border: 2px solid #000;
     background-color:#d3d3d3;;
     padding: 5px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .form-item button:hover {
@@ -207,6 +208,12 @@ form {
 
 .form-item button {
     width: 100px;
+}
+
+#message{
+    width: 550px;
+    height: 250px;
+    position: relative;
 }
 
 @media (min-width:350px){
